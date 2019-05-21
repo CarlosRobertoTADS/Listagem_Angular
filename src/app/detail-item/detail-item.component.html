@@ -1,0 +1,19 @@
+<div *ngIf="item">
+
+  
+  
+
+
+<div class="modal-header">
+    <h4 class="modal-title">{{item.nome | uppercase}} Details</h4>
+  </div>
+  <div class="modal-body">
+      <div><span>id: </span>{{item.id}}</div>
+      <div>
+       
+            <div><span>nome: </span>{{item.nome}}</div>
+        
+      </div>
+    <button (click)="goBack()">Voltar</button>
+  </div>
+</div>

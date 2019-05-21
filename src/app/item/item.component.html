@@ -1,0 +1,28 @@
+<div class="container">
+  
+    <h1  class="display-4 text-center">Lista de Itens</h1>
+
+
+
+<div class="row card-group">
+    <div class="col-5"  *ngFor="let item of itens" >
+        <div class="card text-center">
+          
+            <div class="card-body">
+
+            <a routerLink="/detail/{{item.id}}">
+
+            
+              
+              <span class="badge">{{item.id}}</span> {{item.nome}}
+            
+            </a>
+        </div>
+    </div>
+</div>
+
+  </div>
+
+
+
+  
